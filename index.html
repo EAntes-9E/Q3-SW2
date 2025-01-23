@@ -25,17 +25,17 @@
     <h1>Currency Converter</h1>
     <div class="amount">100 pesos</div>
     <div id="result" class="result">--.--</div>
-    <button class="dollar" onclick="convertToDollar()">Dollar</button>
+    <button class="euro" onclick="convertToEuro()">Euro</button>
     <button class="baht" onclick="convertToBaht()">Baht</button>
     <button class="refresh" onclick="refreshPage()">Refresh</button>
   </div>
 
   <script>
-    function convertToDollar() {
+    function convertToEuro() {
       var pesos = 100;
-      var dollarRate = 0.5927;
-      var dollars = pesos * dollarRate;
-      document.getElementById("result").innerText = dollars.toFixed(2);
+      var euroRate = 0.5927;
+      var euro = pesos * euroRate;
+      document.getElementById("result").innerText = euro.toFixed(2);
     }
 
     function convertToBaht() {
